@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(48, 100%, 98%);
+            margin: 20px;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #1c1c1c;
+            padding-bottom: 30px;
+
+        }
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 20%;
+            border: 5px solid #1c1c1c;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-bottom: 1px solid #1c1c1c;
+            padding-bottom: 30px;
+        }
+        h1, h2 {
+            color: #1c1c1c;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        h1 {
+            border-bottom: 4px solid #1c1c1c;
+            padding-bottom: 10px;
+            font-size: 42pt;
+            text-align: center;
+        }
+        h1:hover {
+            /* background: hsl(0, 2%, 41%); */
+            color: hwb(53 11% 12%);
+            transform: scale(1.05) ;
+        }
+
+        h2 {
+            font-size: 32pt;
+        }
+        h2:hover {
+            /* background: hsl(0, 2%, 41%); */
+            color: hwb(53 11% 12%);
+            transform: scale(1.05) ;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 24pt;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ffffff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+            font-size: 18pt;
+            text-align: center;
+            font-weight: bold;
+            width: 200px;
+            border: #1c1c1c 2px solid;
+        }
+        ul li:hover {
+            background: hsl(0, 2%, 41%);
+            color: #ffffff;
+            transform: scale(1.05) skewX(-5deg) skewY(3deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Biodata</h1>
+    <div class="profile">
+        <img src="https://i.pinimg.com/736x/12/09/a3/1209a3c0956753d2814ade2b5a36f37e.jpg" alt="Naruto">
+        <div>
+            <h2>BACHRUL ULLUM ASSRORI</h2>
+            <p>Halo, saya Bahcrul Ullum Assrori. Saya adalah seorang mahasiswa semester 4 Informatika di Universitas Bhinneka PGRI Tulungagung.</p>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <h2>Pendidikan</h2>
+            <p>Saat ini, saya sedang menempuh pendidikan di Universitas Bhinneka PGRI Tulungagung dan mengambil jurusan Informatika, semester 4.</p>
+        </div>
+        <div>
+            <h2>Bakat</h2>
+            <p>Saya memiliki bakat dalam:</p>
+            <ul>
+                <li>Menggambar</li>
+                <li>Berbicara di depan umum</li>
+                <li>Desain Grafis</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <h2>Organisasi</h2>
+        <p>Saya aktif dalam organisasi:</p>
+        <ul>
+            <li>Himpunan Mahasiswa Informatika</li>
+            <li>Komunitas Pecinta Alam</li>
+            <li>Unit Kegiatan Mahasiswa</li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

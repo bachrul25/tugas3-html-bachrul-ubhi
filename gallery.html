@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://m.media-amazon.com/images/S/pv-target-images/0b79246ff36af93a015dc8087115f079adae3f4431c9fcb959d688379a414733.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .gallery {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            white-space: nowrap;
+        }
+
+        .row img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .row img:hover {
+            transform: scale(1.1);
+        }
+
+        .scroll-left {
+            animation: scrollLeft 15s linear infinite;
+        }
+
+        .scroll-right {
+            animation: scrollRight 15s linear infinite;
+        }
+
+        @keyframes scrollLeft {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        @keyframes scrollRight {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="row scroll-left">
+            <img src="1.jpg" alt="Gambar 1">
+            <img src="2.jpg" alt="Gambar 2">
+            <img src="3.jpg" alt="Gambar 3">
+            <img src="4.jpg" alt="Gambar 4">
+            <img src="5.jpg" alt="Gambar 5">
+            <img src="6.jpg" alt="Gambar 6">
+            <img src="7.jpg" alt="Gambar 7">
+        </div>
+        <div class="row scroll-right">
+            <img src="1.jpg" alt="Gambar 1">
+            <img src="2.jpg" alt="Gambar 2">
+            <img src="3.jpg" alt="Gambar 3">
+            <img src="4.jpg" alt="Gambar 4">
+            <img src="5.jpg" alt="Gambar 5">
+            <img src="6.jpg" alt="Gambar 6">
+            <img src="7.jpg" alt="Gambar 7">
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="row scroll-left">
+            <img src="1.jpg" alt="Gambar 1">
+            <img src="2.jpg" alt="Gambar 2">
+            <img src="3.jpg" alt="Gambar 3">
+            <img src="4.jpg" alt="Gambar 4">
+            <img src="5.jpg" alt="Gambar 5">
+            <img src="6.jpg" alt="Gambar 6">
+            <img src="7.jpg" alt="Gambar 7">
+        </div>
+        <div class="row scroll-right">
+            <img src="1.jpg" alt="Gambar 1">
+            <img src="2.jpg" alt="Gambar 2">
+            <img src="3.jpg" alt="Gambar 3">
+            <img src="4.jpg" alt="Gambar 4">
+            <img src="5.jpg" alt="Gambar 5">
+            <img src="6.jpg" alt="Gambar 6">
+            <img src="7.jpg" alt="Gambar 7">
+        </div>
+    </div>
+</body>
+</html>

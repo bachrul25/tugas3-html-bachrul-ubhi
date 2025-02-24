@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Right - Naruto Theme</title>
+    <style>
+       body {
+            padding: 20px; /* Kurangi padding */
+            font-family: Arial, sans-serif;
+            background-color:rgb(254, 255, 224); /* Jingga Naruto */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Biar mepet ke atas */
+            height: auto; /* Jangan pakai 100vh */
+            flex-direction: column;
+            
+}
+fieldset {  
+            width: 100%;  
+            max-width: 400px;  
+            border: 2px solid #1c1c1c;  /* Warna jingga Naruto */
+            border-radius: 12px;  
+            padding: 20px;  
+            background-color:  rgb(254, 255, 224)c;  /* Hitam khas Akatsuki */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);  
+            transition: all 0.3s ease;  
+            color: white;
+        }  
+
+        fieldset:hover {  
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);  
+            transform: translateY(-5px);  
+        } 
+
+        legend {  
+            text-align: center;  
+            font-size: 24pt;  
+            color: #1c1c1c;  /* Hitam */
+            padding: 0 10px;  
+            font-weight: bold;  
+        } 
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 12px;
+            border: #1c1c1c solid 3px;
+            /* background: #1c1c1c;  */
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        li:hover {
+            background: hsl(0, 2%, 41%); /* Jingga Lebih Tua */
+            transform: scale(1.05) skewX(-5deg) skewY(3deg);
+            color: white;
+        }
+
+        img {
+            width: 45px; /* Perbesar sedikit agar animasi lebih terlihat */
+            height: 45px;
+            margin-bottom: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        li:hover img {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20pt;
+            font-weight: bold;
+            color: #1c1c1c;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: hsl(0, 0%, 100%); /* Hitam */
+        }
+
+        ul li:nth-child(6) li:hover { background: #2c2828;}
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Materi Pembelajaran Fullstack Web Developer</legend>
+        <ul>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo"> 
+                <a href="https://www.santrikoding.com/ebook/html-untuk-pemula" target="main">HTML</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo"> 
+                <a href="https://www.santrikoding.com/ebook/css-untuk-pemula" target="main">CSS</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo"> 
+                <a href="https://www.santrikoding.com/kategori/javascript" target="main">JavaScript</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP Logo"> 
+                <a href="https://www.santrikoding.com/kategori/php" target="main">PHP</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap Logo"> 
+                <a href="https://www.santrikoding.com/tutorial-set/crud-codeigniter-4" target="main">Bootstrap</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel Logo"> 
+                <a href="https://www.santrikoding.com/tutorial-set/tutorial-laravel-10-untuk-pemula" target="main">Laravel 10</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL Logo"> 
+                <a href="https://santrikoding.com/tutorial-set/tutorial-nodejs-express-mysql" target="main">NodeJs,Express,& MySQL</a></li>
+        </ul>
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi</title>  
+    <style>  
+        body {  
+            font-family: 'Arial', sans-serif;  
+            background-color:rgb(254, 255, 224); /* Warna oranye khas Naruto */  
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            /* justify-content: center;   */
+            align-items: center;  
+            min-height: 100vh;  
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }  
+
+        nav {  
+            background-color: #1c1c1c; /* Warna hitam khas Akatsuki */  
+            box-shadow: 0 08px 10px rgba(0, 0, 0, 0.1);  
+            border-radius: 10px;  
+            padding: 10px 20px;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            gap: 20px;  
+            max-width: 500px;  
+            width: 100%;  
+            margin-left: 3%;
+        }  
+
+        nav a {  
+            text-decoration: none; 
+            font-size: 18pt; 
+            color: white; /* Oranye khas Naruto */  
+            font-weight: 800;  
+            padding: 10px 15px;  
+            border-radius: 25px;  
+            transition: all 0.3s ease;  
+            position: relative;  
+            overflow: hidden;  
+            text-transform: uppercase;  
+            letter-spacing: 1px;  
+        }  
+
+        nav a:hover {  
+            background: #f6a21e;  
+            transform: scale(1.05) skewX(-5deg) skewY(3deg);
+            color: #1c1c1c;  /* Hitam untuk kontras */  
+        }  
+
+        @media (max-width: 600px) {  
+            nav {  
+                flex-direction: column;  
+                gap: 10px;  
+                padding: 15px;  
+            }  
+
+            nav a {  
+                width: 100%;  
+                text-align: center;  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <nav>  
+        <a href="home.html" target="main">Home</a>  
+        <a href="study.html" target="main">My CV</a>  
+        <a href="gallery.html" target="main">Gallery</a>  
+    </nav>  
+</body>  
+</html>
